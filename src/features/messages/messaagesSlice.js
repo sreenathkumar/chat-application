@@ -9,4 +9,5 @@ const messagesSlice = createSlice({
 })
 
 export default messagesSlice.reducer;
-export const {} = messagesSlice.actions;
+// eslint-disable-next-line no-empty-pattern
+export const { } = messagesSlice.actions;
