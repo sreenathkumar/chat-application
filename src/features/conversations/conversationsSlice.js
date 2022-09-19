@@ -9,4 +9,5 @@ const conversationsSlice = createSlice({
 })
 
 export default conversationsSlice.reducer;
-export const {} = conversationsSlice.actions;
+// eslint-disable-next-line no-empty-pattern
+export const { } = conversationsSlice.actions;
