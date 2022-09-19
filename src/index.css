@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .conversation-row-grid {
+      height: calc(100vh - 65px);
+      grid-template-rows: auto 1fr auto;
+   }
+}
+body {
+   background-color: #ffffff;
+}
+.bubble {
+   position: relative;
+   background: #000000;
+   color: #ffffff;
+   font-family: Arial;
+   font-size: 20px;
+   line-height: 120px;
+   text-align: center;
+   width: 250px;
+   height: 120px;
+   border-radius: 10px;
+   padding: 0px;
+}
+.bubble:after {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 0;
+   z-index: 1;
+   border-style: solid;
+   border-color: #000000 transparent;
+   border-width: 20px 20px 0;
+   bottom: -20px;
+   left: 87%;
+   margin-left: -20px;
+}
